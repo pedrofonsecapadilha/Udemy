@@ -3,6 +3,7 @@ import './App.css';
 // import ExpenseItem from './components/ExpenseItem';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
+/* import ExpensesFilter from './components/Expenses/ExpensesFilter'; */
 
 // const App = () => {} - TAMBÉM PODE-SE CHAMAR UMA FUNÇÃO DESSA FORMA, É UMA QUESTÃO DE ESCOLHA.
 function App() {
@@ -31,14 +32,17 @@ function App() {
       amount: 450.00,
       date: new Date(2021, 5, 12),
     },
-  ]
+  ];
+
+  function addExpenseHandler(expense) {
+    console.log('In App.js');
+    console.log(expense);
+  };
 
   return (
     <div>
-      <NewExpense></NewExpense>
-      <Expenses
-        items={expenses}
-      ></Expenses>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
+      <Expenses items={expenses}></Expenses>
     </div>
   );
 }
