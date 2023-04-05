@@ -2,6 +2,7 @@ import './App.css';
 // import logo from './logo.svg';
 // import ExpenseItem from './components/ExpenseItem';
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
 
 // const App = () => {} - TAMBÉM PODE-SE CHAMAR UMA FUNÇÃO DESSA FORMA, É UMA QUESTÃO DE ESCOLHA.
 function App() {
@@ -34,7 +35,7 @@ function App() {
 
   return (
     <div>
-      <h2 className="center">Let's get started!</h2>
+      <NewExpense></NewExpense>
       <Expenses
         items={expenses}
       ></Expenses>
