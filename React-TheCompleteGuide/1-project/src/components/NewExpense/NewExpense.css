@@ -35,3 +35,24 @@
 .new-expense button.alternative:active {
   background-color: #ddb3f8;
 }
+
+/* NEW BUTTON */
+
+.beautiful{
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  /* background: linear-gradient(45deg,#5334f5,#9c6fff); */
+  background: radial-gradient(#40005d,#ae00fe);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.15);
+  transition: .8s cubic-bezier(.2,1,.2,1);
+  cursor: pointer;
+}
+
+.beautiful:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.25);
+}
