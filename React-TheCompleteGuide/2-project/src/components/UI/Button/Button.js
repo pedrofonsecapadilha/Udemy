@@ -1,3 +1,5 @@
+// AQUI ESTAMOS USANDO O STYLED COMPONENT
+
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -11,7 +13,7 @@ const Button = styled.button`
   cursor: pointer;
 
   @media (min-width: 760px) {
-    
+    width: auto;
   }
 
   &:focus {
@@ -26,14 +28,14 @@ const Button = styled.button`
   }
 `;
 
-// ANTES DE USAR O STYLED COMPONENT
+// ANTES / DEPOIS DE USAR O STYLED COMPONENT
 
 // import React from 'react';
-// import './Button.css';
+// import styles from './Button.module.css';
 
 // const Button = props => {
 //   return (
-//     <button type={props.type} className="button" onClick={props.onClick}>
+//     <button type={props.type} classname={styles.button} onclick={props.onclick}>
 //       {props.children}
 //     </button>
 //   );
